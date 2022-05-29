@@ -8,7 +8,7 @@ class Item(BaseModel):
 
 
 app = FastAPI()
-classifier = pipeline("text-classification")
+classifier = pipeline("cardiffnlp/twitter-roberta-base-sentiment")
 
 
 @app.get("/")
