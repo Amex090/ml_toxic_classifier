@@ -9,6 +9,7 @@ class Item(BaseModel):
 
 app = FastAPI()
 classifier = pipeline("text-classification")
+classifier = classifier(model="sbcBI")
 
 
 @app.get("/")
