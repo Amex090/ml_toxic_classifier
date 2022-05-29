@@ -9,7 +9,7 @@ class Item(BaseModel):
 
 app = FastAPI()
 classifier = pipeline(
-    "text-classification", model="distilbert-base-uncased-finetuned-sst-2-english"
+    "text-classification", model="lordtt13/emo-mobilebert"
 )
 
 
