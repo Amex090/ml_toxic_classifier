@@ -8,7 +8,9 @@ class Item(BaseModel):
 
 
 app = FastAPI()
-classifier = pipeline("text-classification")
+classifier = pipeline(
+                      "text-classification", model="cmarkea/distilcamembert-base-sentiment"
+                     )
 
 
 @app.get("/")
